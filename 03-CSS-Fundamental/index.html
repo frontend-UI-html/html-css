@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The basic language of the Web : HTML</title>
+    <!--External css example below-->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+
+    <!-- Header section -->
+    <header class="main-header">
+      <h1>📘The code magazine</h1>
+
+      <nav>
+        <a href="blog.html">Blog</a>
+        <a href="#">Challenges</a>
+        <a href="#">Flexbox</a>
+        <a href="#">CSS Grid</a>
+      </nav>
+    </header>
+
+    <article>
+      <h2>The Basic Language of the Web: HTML</h2>
+
+      <!-- Add image tag below, alt attribute is used by the search engines & screen readers (for blind)-->
+      <img src="img/laura-jones.jpg" alt="headshot of laura jones" />
+      <!-- Demonstration of bold/strong below-->
+      <p id="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+      <img
+        src="img/post-img.jpg"
+        alt="html code on screen"
+        width="500"
+        height="200"
+        class="code-img"
+      />
+      <p>
+        All modern websites and web applications are built using three
+        <!--Using italics (using semantic element instead of i tag)-->
+        <em>fundamental</em>
+        technologies: HTML, CSS and JavaScript. These are the languages of the
+        web.
+      </p>
+
+      <p>
+        In this post, let's focus on HTML. We will learn what HTML is all about,
+        and why you too should learn it.
+      </p>
+      <p>
+        HTML consists of elements that describe different types of content:
+        paragraphs, links, headings, images, video, etc. Web browsers understand
+        HTML and render HTML code as websites.
+      </p>
+
+      <p>In HTML, each element is made up of 3 parts:</p>
+      <!-- ordered list below, with numbers-->
+      <ol>
+        <li>The opening tag</li>
+        <li>The closing tag</li>
+        <li>The actual element</li>
+      </ol>
+
+      <h3>Why should you learn HTML?</h3>
+
+      <p>
+        There are countless reasons for learning the fundamental language of the
+        web. Here are 5 of them:
+      </p>
+
+      <!-- Unordered list below, with bullet points-->
+      <ul>
+        <li>To be able to use the fundamental web dev language</li>
+        <li>
+          To hand-craft beautiful websites instead of relying on tools like
+          Worpress or Wix
+        </li>
+        <li>To build web applications</li>
+        <li>To impress friends</li>
+        <li>To have fun 😃</li>
+      </ul>
+
+      <!--Example below for links to external site, target _blank specifies to open in new tab-->
+      <p>
+        You can learn more at
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+          target="_blank">MSDN web docs</a
+        >
+      </p>
+
+      <p>Hopefully you learned something new here. See you next time!</p>
+    </article>
+
+    <aside>
+      <p>
+        <strong>Related posts</strong>
+        <ul class="related-posts">
+          <li>
+            <img src="img/related-1.jpg" alt="related image" width="75" height="75">
+            <a href="#">How to Learn Web Development</a>
+            <p class="related-author">By Jonas Schmedtmann</p>
+          </li>
+          <li>
+            <img src="img/related-2.jpg" alt="related image" width="75" height="75">
+            <a href="#">The Unknown Powers of CSS</a>
+            <p class="related-author">By Jim Dillon</p>
+          </li>
+          <li>
+            <img src="img/related-3.jpg" alt="related image" width="75" height="75">
+            <a href="#">Why JavaScript is Awesome</a>
+            <p class="related-author">By Shobha Kapri</p>
+          </li>
+        </ul>
+      </p>
+    </aside>
+
+    <footer> 
+      <p id="copyright">Copyright &copy; 2027 by The Code</p>
+    </footer>
+  </div>
+  <button>❤Like</button>
+  </body>
+</html>

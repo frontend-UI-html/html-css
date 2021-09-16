@@ -1,0 +1,223 @@
+/* validator.w3.org -- to validate html page */
+
+/* Universal selectors, properties are inherited by all the elements, even the inherited properties are applied using universal selectors */
+* {
+  font-family: sans-serif;
+  /* select gray color below*/
+  color: #444;
+  /* border-top: 10px solid #1098ad; */
+}
+
+/* Example of how to centralize the contents of the page, first create div with class=container in the html page */
+.container {
+  width: 95%;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* Short hand notation below for above */
+  margin: 0 auto;
+}
+
+body {
+  font-family: sans-serif;
+  /* select gray color below*/
+  color: #444;
+  position: relative;
+
+  /* Below mentined property will not get inherited */
+  border-top: 10px solid #1098ad;
+}
+
+/* common properties section*/
+/* h1,
+h2,
+p,
+h3,
+h4 {
+  font-family: sans-serif; */
+/* select gray color below*/
+/*   color: #444;
+} */
+
+/*light blue color below*/
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+h4 {
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* footer p {
+  font-size: 20px;
+} */
+
+header h1,
+nav {
+  font-style: italic;
+}
+/* id selectors start with hash */
+#author {
+  font-style: italic;
+  font-size: 15px;
+}
+
+#copyright {
+  font-size: 15px;
+}
+
+/* use dot to specify class selector */
+.related-author {
+  font-style: italic;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* select list style */
+.related-posts {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #e4e696;
+  /* padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px; */
+  /* Padding short form below for above */
+  padding: 1px;
+
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+/* Example of dimensions below */
+.code-img {
+  /* width: 800px; */
+  /* Percentage of width of the parent container */
+  width: 60%;
+  height: auto;
+}
+
+aside {
+  background-color: #f7f7f7;
+  /*border-top, border-left & solid, dotted, dash*/
+  border-top: 5px solid #34acd1;
+  border-bottom: 5px solid #34acd1;
+  width: 500px;
+}
+
+/* Pseudo class, css automatically detects*/
+/* li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(2) {
+  color: red;
+}
+
+li:nth-child(even) {
+  color: red;
+} */
+
+/* This won't work*/
+/* article p:first-child {
+  color: red;
+} */
+
+/* article p:last-child {
+  color: red;
+} */
+
+/* Psuedo element - h1::first-letter */
+.main-header h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* Apply this to only the immidiate p element after h3, not all */
+h3 + p::first-line {
+  font-style: italic;
+  color: red;
+}
+
+h2::after {
+  content: "TOP";
+  font-size: 15px;
+  background-color: palegoldenrod;
+  vertical-align: top;
+  display: inline-block;
+}
+
+/* **************************************************** */
+/* Styling links */
+a:link {
+  color: #1098ad;
+  /* This will remove the underline from links */
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: none dotted orangered;
+}
+
+a:active {
+  color: aqua;
+  font-style: italic;
+}
+
+li {
+  /* display list element in inline mode */
+  display: inline;
+}
+
+nav a:link {
+  color: orangered;
+  /* background-color: orangered; */
+  margin: 1px;
+  padding: 1px;
+
+  /** Display the links as block (stacked vertically, occupying the width of parent container*/
+  display: block;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  /* This will be positioned abosolute to the dimentions of the parent container (body in this case) */
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
